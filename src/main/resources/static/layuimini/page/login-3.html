@@ -60,7 +60,7 @@
 <div class="main-body">
     <div class="login-main">
         <div class="login-top">
-            <span>家校通后台登录</span>
+            <span>后台登录</span>
             <span class="bg1"></span>
             <span class="bg2"></span>
         </div>
@@ -146,28 +146,6 @@
                             value: data.data.role
                         });
                         window.location = "../index.html";
-                        // $.ajax({
-                        //     type: 'GET',
-                        //     url: $api + 'api/teacher?page=1&limit=2&id=' + layui.data('table')['userId'],
-                        //     contentType: "application/json;charset=utf-8",
-                        //     headers: {
-                        //         'Authorization': layui.data('table')['Authorization']
-                        //     },
-                        //     dataType: 'json',
-                        //     success: function (data) {
-                        //         if (!data.code) {
-                        //             layui.data('table', {
-                        //                 key: 'schoolId',
-                        //                 value: data.data[0].schoolId
-                        //             });
-                        //             layui.data('table', {
-                        //                 key: 'role',
-                        //                 value: data.data[0].role
-                        //             });
-                        //             window.location = "../index.html";
-                        //         }
-                        //     }
-                        // });
                     } else {
                         alert(data.msg);
                     }
